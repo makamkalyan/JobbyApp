@@ -1,0 +1,24 @@
+.home_container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 30px;
+  height: 100vh;
+  width: 100vw;
+}
+.button {
+  width: 120px;
+  padding: 7px;
+}
+@media all and (max-width: 576px) {
+  .home_container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: none;
+  }
+}

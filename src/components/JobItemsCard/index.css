@@ -1,0 +1,45 @@
+.Failure_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.Failure_img {
+  height: 170px;
+  margin-bottom: 10px;
+}
+.Failure_h1 {
+  font-size: 18px;
+}
+.Failure_p {
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+.failure_button {
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: #4f46e5;
+  border: 0px;
+  padding: 10px;
+  color: white;
+}
+.NoItems_view_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.noJobs_img {
+  width: 400px;
+}
+.noJobs_h1 {
+  padding: 0px;
+  margin: 0px;
+}
+.noJobs_p {
+  padding: 0px;
+  margin: 0px;
+}

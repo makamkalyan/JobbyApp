@@ -1,0 +1,84 @@
+.job_item_li {
+  background-color: #2c364c;
+  border-radius: 9px;
+  list-style-type: none;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 10px;
+  font-family: Roboto;
+}
+.job_item_link {
+  text-decoration: none;
+}
+.title_company_logo_container {
+  display: flex;
+  align-items: center;
+}
+.title {
+  color: white;
+  font-size: 22px;
+  margin: 8px 0px 0px 0px;
+  padding: 0px;
+}
+.company_logo {
+  height: 60px;
+  margin-right: 10px;
+}
+.rating_container {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+.salary_location_container {
+  display: flex;
+  justify-content: space-between;
+}
+.salary_location_inside_container {
+  display: flex;
+}
+.location_salary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 17px;
+}
+.location_salary_p {
+  margin-left: 10px;
+  color: #cbd5e1;
+}
+.star_img {
+  color: #fbbf24;
+  margin-right: 10px;
+}
+.rating {
+  color: white;
+}
+.location_brieCase_img {
+  color: white;
+}
+.package_per_annum_p {
+  color: white;
+}
+.description_h1 {
+  color: #cbd5e1;
+  font-weight: bold;
+}
+.description_p {
+  color: #cbd5e1;
+}
+
+@media all and (max-width: 767px) {
+  .job_item_li {
+    width: 90%;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .description_h1 {
+    font-size: 18px;
+  }
+  .description_h1 {
+    font-size: 15px;
+  }
+}

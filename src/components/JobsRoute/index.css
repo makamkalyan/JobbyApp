@@ -1,0 +1,59 @@
+.main_container {
+  background-color: black;
+  padding: 20px;
+}
+
+.li_salary {
+  list-style-type: none;
+}
+.li_employType {
+  list-style-type: none;
+}
+.jobRoute_container {
+  color: white;
+  display: none;
+}
+.search_button {
+  width: 40px;
+  padding: 4px;
+  background-color: transparent;
+  border: 1px solid #64748b;
+}
+.search-icon {
+  color: #64748b;
+}
+.hr {
+  background-color: white;
+}
+.jobRoute_large_container {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.profile_employ_salary_container {
+  display: flex;
+  flex-direction: column;
+}
+.input_items_large_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+}
+.input_search_button_large_container {
+  margin-left: 40px;
+}
+.jobs_itemCard_large_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .jobRoute_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .jobRoute_large_container {
+    display: none;
+  }
+}
