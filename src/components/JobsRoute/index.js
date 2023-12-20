@@ -99,8 +99,6 @@ class JobsRoute extends Component {
         rating: each.rating,
         title: each.title,
       }))
-      console.log(updatedData)
-
       this.setState({
         jobs: updatedData,
         isLoading: LoadingStatus.success,
@@ -181,12 +179,11 @@ class JobsRoute extends Component {
             <ul className="employType_ul">
               <h1>Type of Employment</h1>
               {employmentTypesList.map(each => (
-                <li className="li_employType">
+                <li className="li_employType" key={each.employmentTypeId}>
                   <input
                     id={each.employmentTypeId}
                     type="checkbox"
                     value={each.employmentTypeId}
-                    key={each.employmentTypeId}
                     onChange={this.onEmployId}
                   />
                   <label htmlFor={each.employmentTypeId}>{each.label}</label>
@@ -197,13 +194,12 @@ class JobsRoute extends Component {
             <ul className="salary_ul">
               <h1>Salary Range</h1>
               {salaryRangesList.map(each => (
-                <li className="li_salary">
+                <li className="li_salary" key={each.salaryRangeId}>
                   <input
                     id={each.salaryRangeId}
                     type="radio"
                     value={each.salaryRangeId}
                     name="salary"
-                    key={each.salaryRangeId}
                     onChange={this.onSalaryId}
                   />
                   <label htmlFor={each.salaryRangeId}>{each.label}</label>
@@ -222,31 +218,30 @@ class JobsRoute extends Component {
           <div className="jobRoute_large_container">
             <div className="profile_employ_salary_container">
               <Profile />
+              <h1>Type of Employment</h1>
               <ul className="employType_ul">
-                <h1>Type of Employment</h1>
                 {employmentTypesList.map(each => (
-                  <li className="li_employType">
+                  <li className="li_employType" key={each.employmentTypeId}>
                     <input
                       id={each.employmentTypeId}
                       type="checkbox"
                       value={each.employmentTypeId}
-                      key={each.employmentTypeId}
                       onChange={this.onEmployId}
                     />
                     <label htmlFor={each.employmentTypeId}>{each.label}</label>
                   </li>
                 ))}
               </ul>
+
               <ul className="salary_ul">
                 <h1>Salary Range</h1>
                 {salaryRangesList.map(each => (
-                  <li className="li_salary">
+                  <li className="li_salary" key={each.salaryRangeId}>
                     <input
                       id={each.salaryRangeId}
                       type="radio"
                       value={each.salaryRangeId}
                       name="salary"
-                      key={each.salaryRangeId}
                       onChange={this.onSalaryId}
                     />
                     <label htmlFor={each.salaryRangeId}>{each.label}</label>

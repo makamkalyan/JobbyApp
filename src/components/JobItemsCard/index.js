@@ -20,8 +20,8 @@ const JobItemsCard = props => {
         src="https://assets.ccbp.in/frontend/react-js/no-jobs-img.png"
         alt="no jobs"
       />
-      <h1 className="noJobs_h1">No Jobs Find</h1>
-      <p className="noJobs_p">We could not find any jobs.Try others filters.</p>
+      <h1 className="noJobs_h1">No Jobs Found</h1>
+      <p className="noJobs_p">We could not find any jobs. Try other filters</p>
     </div>
   )
 
@@ -43,11 +43,11 @@ const JobItemsCard = props => {
       <img
         className="Failure_img"
         src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
-        alt="failure"
+        alt="failure view"
       />
-      <h1 className="Failure_h1">Oops! Something Went Wrong.</h1>
+      <h1 className="Failure_h1">Oops! Something Went Wrong</h1>
       <p className="Failure_p">
-        We cannot seem to find the page you looking for.
+        We cannot seem to find the page you are looking for
       </p>
       <button
         className="failure_button"

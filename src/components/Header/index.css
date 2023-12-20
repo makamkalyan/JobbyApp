@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  width: 100%;
 }
 .link_img_container {
   display: none;

@@ -22,7 +22,12 @@ const JobItem = props => {
     <Link className="job_item_link" to={`/jobs/${id}`}>
       <li className="job_item_li">
         <div className="title_company_logo_container">
-          <img className="company_logo" src={companyLogoUrl} alt={id} />
+          <img
+            className="company_logo"
+            src={companyLogoUrl}
+            alt="company logo"
+            key="company_logo_url"
+          />
           <div className="title_rating_container">
             <h1 className="title">{title}</h1>
             <div className="rating_container">
